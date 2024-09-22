@@ -97,18 +97,21 @@ nav {
   line-height: 1.7rem;
   text-align: center;
 }
-
+.rudy-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 .rudy-img {
-  position: absolute;
+  position: static;
   height: auto;
   width: 40%;
-  bottom: -40vh;
-  right: 30%;
 }
 
 @media screen and (max-width: 485px) {
   .header__container {
     height: 160vh;
+    position: static;
   }
   .rudy-img {
     bottom: -60vh;
@@ -118,6 +121,7 @@ nav {
 @media screen and (max-width: 385px) {
   .header__container {
     height: 185vh;
+    position: static;
   }
   .rudy-img {
     bottom: -85vh;
@@ -126,7 +130,7 @@ nav {
 
 @media screen and (min-width: 768px) {
   nav {
-    position: static;
+    position: relative;
     padding: 2rem 0;
     max-width: var(--max-width);
     margin: auto;
@@ -167,7 +171,7 @@ nav {
   .rudy-img {
     bottom: 0;
     right: 0;
-    display: block;
+    position: absolute;
   }
 }
 
