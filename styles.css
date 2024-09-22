@@ -2,7 +2,6 @@
 
 :root {
   --primary-color: #C1121F;
-  --primary-color-dark: #C1121F;
   --text-dark: #333333;
   --text-light: #767268;
   --white: #ffffff;
@@ -39,7 +38,6 @@ nav {
 
 .nav__header {
   padding: 1rem;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,8 +60,7 @@ nav {
 .header__container {
   max-width: var(--max-width);
   margin: auto;
-  padding-block: 8rem 2rem;
-  padding-inline: 1rem;
+  padding: 8rem 1rem 2rem;
   display: grid;
   gap: 2rem;
   overflow-x: hidden;
@@ -80,6 +77,7 @@ nav {
   line-height: 5.5rem;
   text-align: center;
 }
+
 .header__content h2 {
   font-size: 2rem;
   font-weight: 400;
@@ -88,6 +86,7 @@ nav {
   line-height: 2.5rem;
   text-align: center;
 }
+
 .header__content h1 span {
   color: var(--primary-color);
 }
@@ -97,7 +96,8 @@ nav {
   line-height: 1.7rem;
   text-align: center;
 }
-.rudy-img{
+
+.rudy-img {
   position: absolute;
   bottom: -40vh;
   right: 30%;
@@ -105,53 +105,30 @@ nav {
   width: 40%;
 }
 
-@media (width < 485px){
+@media (max-width: 485px) {
   .header__container {
-    max-width: var(--max-width);
-    margin: auto;
-    padding-block: 8rem 2rem;
-    padding-inline: 1rem;
-    display: grid;
-    gap: 2rem;
-    overflow-x: hidden;
-    z-index: 1;
     height: 160vh;
   }
-  .rudy-img{
-    position: absolute;
+  .rudy-img {
     bottom: -60vh;
-    right: 30%;
-    height: auto;
-    width: 40%;
   }
 }
-@media (width < 385px){
+
+@media (max-width: 385px) {
   .header__container {
-    max-width: var(--max-width);
-    margin: auto;
-    padding-block: 8rem 2rem;
-    padding-inline: 1rem;
-    display: grid;
-    gap: 2rem;
-    overflow-x: hidden;
-    z-index: 1;
     height: 185vh;
   }
-  .rudy-img{
-    position: absolute;
+  .rudy-img {
     bottom: -85vh;
-    right: 30%;
-    height: auto;
-    width: 40%;
   }
 }
-@media (width > 768px) {
+
+@media (min-width: 768px) {
   nav {
     position: static;
-    padding-block: 2rem 0;
-    padding-inline: 1rem;
+    padding: 2rem 0;
     max-width: var(--max-width);
-    margin-inline: auto;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -159,8 +136,6 @@ nav {
   }
 
   .nav__header {
-    flex: 1;
-    padding: 0;
     background-color: transparent;
   }
 
@@ -179,7 +154,6 @@ nav {
   .header__container {
     padding-block: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     position: relative;
     height: auto;
   }
@@ -187,17 +161,15 @@ nav {
   .header__content :is(h1, h2, p) {
     text-align: left;
   }
-  .rudy-img{
-    position: absolute;
-    bottom: 0vh;
-    right: 0%;
-    height: auto;
-    width: 40%;
+
+  .rudy-img {
+    bottom: 0;
+    right: 0;
     display: block;
   }
 }
 
-@media (width > 1024px) {
+@media (min-width: 1024px) {
   .header__content form {
     flex-direction: row;
   }
