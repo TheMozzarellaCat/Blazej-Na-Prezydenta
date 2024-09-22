@@ -68,6 +68,7 @@ nav {
   gap: 2rem;
   overflow-x: hidden;
   z-index: 1;
+  height: 140vh;
 }
 
 .header__content h1 {
@@ -98,12 +99,52 @@ nav {
 }
 .rudy-img{
   position: absolute;
-  bottom: -10vh;
+  bottom: -40vh;
   right: 30%;
   height: auto;
   width: 40%;
 }
 
+@media (width < 485px){
+  .header__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding-block: 8rem 2rem;
+    padding-inline: 1rem;
+    display: grid;
+    gap: 2rem;
+    overflow-x: hidden;
+    z-index: 1;
+    height: 160vh;
+  }
+  .rudy-img{
+    position: absolute;
+    bottom: -60vh;
+    right: 30%;
+    height: auto;
+    width: 40%;
+  }
+}
+@media (width < 385px){
+  .header__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding-block: 8rem 2rem;
+    padding-inline: 1rem;
+    display: grid;
+    gap: 2rem;
+    overflow-x: hidden;
+    z-index: 1;
+    height: 185vh;
+  }
+  .rudy-img{
+    position: absolute;
+    bottom: -85vh;
+    right: 30%;
+    height: auto;
+    width: 40%;
+  }
+}
 @media (width > 768px) {
   nav {
     position: static;
@@ -140,6 +181,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     position: relative;
+    height: auto;
   }
 
   .header__content :is(h1, h2, p) {
