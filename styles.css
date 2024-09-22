@@ -61,6 +61,7 @@ nav {
   max-width: var(--max-width);
   margin: auto;
   padding: 8rem 1rem 2rem;
+  padding-bottom: 0rem;
   display: grid;
   gap: 2rem;
   overflow-x: hidden;
@@ -99,10 +100,10 @@ nav {
 
 .rudy-img {
   position: absolute;
-  bottom: -40vh;
-  right: 30%;
   height: auto;
   width: 40%;
+  bottom: -40vh;
+  right: 30%;
 }
 
 @media screen and (max-width: 485px) {
@@ -153,6 +154,7 @@ nav {
 
   .header__container {
     padding-block: 2rem;
+    padding-bottom: 0rem;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     height: auto;
