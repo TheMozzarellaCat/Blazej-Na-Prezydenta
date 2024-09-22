@@ -101,11 +101,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 100%;
 }
 .rudy-img {
   position: static;
   height: auto;
   width: 40%;
+  
 }
 
 @media screen and (max-width: 485px) {
